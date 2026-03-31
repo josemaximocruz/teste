@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo juju</title>
+
+<style>
+body{
+    background-color: crimson
+}
+
+    .painel{
+        margin: auto;
+        background-color: antiquewhite;
+        width: 500px;
+        height: 550px;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+#sim{
+    height: 40px;
+    width: 60px;
+    background-color: rgb(180, 15, 15);
+    border: 2px solid rgb(65, 7, 7);
+    border-radius: 10px;
+    color: white;
+    margin-left: -60px;
+}
+#nao{
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: rgb(180, 15, 15);
+    border: 2px solid rgb(65, 7, 7);
+    border-radius: 10px;
+    color: white;
+    margin-left: 10px;
+}
+</style>
+
+</head>
+<body>
+
+    <div class="painel">
+        <h1> Te amo lenda</h1>
+
+      <img src="https://media.tenor.com/a6ER9WHci1sAAAAM/mwuah-love-you.gif" alt="">
+
+        <h2>Quer uma pastelzinhooo?</h2>
+
+        <a href="https://youtu.be/lIMq5OoZzAk?si=8EdYnj3xI0Url7oX"><button id="sim"> Simm! </button><a>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+
+    </div>
+    
+<script>
+    function fuja(){
+        var botaoNao = document.getElementById("nao")
+
+        var LarguraJanela = window.innerWidt;
+        var alturajanela = window.innerHeight;
+
+        var maxX = LarguraJanela - botaoNao.offsetWidth;
+        var maxY = alturajanela - botaoNao.offsetWidth;
+
+        var aleatorioX = Math.floor(Math.random() * maxX);
+        var aleatorioY = Math.floor(Math.random() * maxY);
+
+        botaoNao.style.left = aleatorioX + "px";
+        botaoNao.style.top = aleatorioY + "px";
+
+
+    }
+</script>
+
+
+
+</body>
+</html>
